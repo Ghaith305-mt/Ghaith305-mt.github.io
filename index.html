@@ -1,26 +1,208 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Gaith - CV</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghaith Al-Mutairi - CV</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f3f3f3;
+      color: #222;
+      line-height: 1.5;
+    }
+
+    .cv-container {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: #ffffff;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .top-header {
+      background: #4d5f6d;
+      color: white;
+      padding: 28px 40px;
+    }
+
+    .top-header h1 {
+      margin: 0;
+      font-size: 42px;
+      font-weight: 700;
+    }
+
+    .top-header h2 {
+      margin: 8px 0 22px;
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      font-size: 20px;
+    }
+
+    .contact-item {
+      min-width: 280px;
+    }
+
+    .main-content {
+      padding: 30px 40px 40px;
+    }
+
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #4d5f6d;
+      border-bottom: 2px solid #a0a7ad;
+      padding-bottom: 8px;
+      margin-bottom: 14px;
+    }
+
+    .section p {
+      margin: 8px 0;
+      font-size: 18px;
+    }
+
+    .project-title,
+    .skill-label,
+    .cert-title,
+    .lang-title {
+      font-weight: 700;
+    }
+
+    ul {
+      margin: 8px 0 8px 24px;
+      padding: 0;
+      font-size: 18px;
+    }
+
+    .cert-grid,
+    .lang-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px 30px;
+    }
+
+    .cert-item,
+    .lang-item {
+      font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+      .top-header {
+        padding: 22px 20px;
+      }
+
+      .top-header h1 {
+        font-size: 32px;
+      }
+
+      .top-header h2 {
+        font-size: 20px;
+      }
+
+      .main-content {
+        padding: 22px 20px 30px;
+      }
+
+      .contact-row {
+        font-size: 17px;
+      }
+
+      .section p,
+      ul,
+      .cert-item,
+      .lang-item {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <div class="cv-container">
+    <header class="top-header">
+      <h1>Ghaith Al-Mutairi</h1>
+      <h2>Software Engineer</h2>
+      <div class="contact-row">
+        <div class="contact-item">📧 ghaithatallah1@gmail.com</div>
+        <div class="contact-item">📞 0552714030</div>
+      </div>
+    </header>
 
-    <h1>Gaith Al-Mutairi</h1>
-    <p>Email: your@email.com</p>
+    <main class="main-content">
+      <section class="section">
+        <div class="section-title">Summary</div>
+        <p>
+          Software Engineering student with excellent academic performance
+          (GPA 3.93/4.00, First-Class Honors) and strong foundation in software
+          development and project management. Certified in Business Professional
+          Project Management (CBP), with hands-on experience in web development
+          and databases. Seeking to leverage analytical and problem-solving
+          skills in a consulting or technology-driven role.
+        </p>
+      </section>
 
-    <h2>Education</h2>
-    <p>Software Engineering - University of Hail</p>
+      <section class="section">
+        <div class="section-title">Education</div>
+        <p><strong>Bachelor of Software Engineering</strong> - University of Hail</p>
+        <p>GPA: 3.93 / 4.00 (First-Class Honors)</p>
+        <p>Expected Graduation: 2027</p>
+      </section>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Java</li>
-    </ul>
+      <section class="section">
+        <div class="section-title">Projects</div>
 
-    <h2>Projects</h2>
-    <p>Investor & Startup Platform App</p>
+        <p class="project-title">Web Application Project</p>
+        <ul>
+          <li>Developed a responsive website using HTML, CSS, and JavaScript.</li>
+          <li>Designed a user-friendly interface and improved user experience.</li>
+        </ul>
 
+        <p class="project-title">Database Management System</p>
+        <ul>
+          <li>Designed and implemented a database using SQL.</li>
+          <li>Created tables, queries, and relationships for data management.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <div class="section-title">Skills</div>
+        <p><span class="skill-label">Technical Skills:</span> Java, C#, HTML, CSS, JavaScript, SQL</p>
+        <p><span class="skill-label">Frameworks & Tools:</span> ASP.NET Core MVC, Oracle Database, Git</p>
+        <p><span class="skill-label">Soft Skills:</span> Problem Solving, Analytical Thinking, Communication, Teamwork</p>
+      </section>
+
+      <section class="section">
+        <div class="section-title">Certificates</div>
+        <div class="cert-grid">
+          <div class="cert-item"><span class="cert-title">CBP – Project Management</span><br>IBTA, 2025</div>
+          <div class="cert-item"><span class="cert-title">Oracle Database SQL Certification</span></div>
+          <div class="cert-item"><span class="cert-title">Web Development</span><br>(HTML, CSS, JavaScript)</div>
+          <div class="cert-item"><span class="cert-title">ASP.NET Core MVC Training</span></div>
+          <div class="cert-item"><span class="cert-title">C# Programming Training</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">Languages</div>
+        <div class="lang-grid">
+          <div class="lang-item"><span class="lang-title">Arabic:</span> Native</div>
+          <div class="lang-item"><span class="lang-title">English:</span> Intermediate</div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
